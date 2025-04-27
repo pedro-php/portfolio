@@ -1,0 +1,143 @@
+/* Esquema de cores principal */
+:root {
+  --primary: #6a1b9a;      /* Roxo principal */
+  --primary-light: #9c4dcc; /* Roxo mais claro */
+  --primary-dark: #38006b;  /* Roxo mais escuro */
+  --secondary: #f5f5f5;     /* Cinza claro */
+  --dark: #212121;          /* Cinza escuro quase preto */
+  --light: #ffffff;         /* Branco */
+  --accent: #ff4081;        /* Cor de destaque (rosa) */
+  --text-primary: #333333;  /* Cor de texto principal */
+  --text-secondary: #757575; /* Cor de texto secundária */
+}
+
+/* Estilos globais */
+body {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  color: var(--text-primary);
+  background-color: var(--light);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+/* Animações */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Botões personalizados */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards e elementos de UI */
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar personalizada */
+.navbar {
+  background-color: var(--light);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.nav-link {
+  color: var(--text-primary);
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary);
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color: var(--light);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Secções */
+.section-title {
+  position: relative;
+  margin-bottom: 3rem;
+  color: var(--primary);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary);
+}
+
+/* Skills badges */
+.skill-badge {
+  background-color: var(--primary-light);
+  color: var(--light);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+  background-color: var(--primary);
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  section {
+    padding: 3rem 0;
+  }
+  
+  .hero {
+    min-height: 80vh;
+  }
+}
