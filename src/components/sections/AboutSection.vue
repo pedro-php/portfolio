@@ -5,9 +5,8 @@
         <div class="col-lg-6 mb-4 mb-lg-0">
           <div class="about-img-container">
             <div class="about-img-wrapper">
-              <img src="https://via.placeholder.com/600x800" alt="Profile Picture" class="img-fluid rounded shadow-lg">
+              <img src="../../../public/profile_picture.png" alt="Profile Picture" class="img-fluid rounded shadow-lg">
             </div>
-            <div class="about-shape"></div>
           </div>
         </div>
         <div class="col-lg-6">
@@ -87,18 +86,6 @@ export default {
 
 .about-img-wrapper:hover img {
   transform: scale(1.05);
-}
-
-.about-shape {
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  bottom: 0;
-  right: 0;
-  background-color: var(--primary-light);
-  opacity: 0.2;
-  border-radius: 8px;
-  z-index: 1;
 }
 
 .about-info {
