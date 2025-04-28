@@ -5,7 +5,7 @@
         <div class="col-lg-6 mb-4 mb-lg-0">
           <div class="about-img-container">
             <div class="about-img-wrapper">
-              <img src="../../../public/profile_picture.png" alt="Profile Picture" class="img-fluid rounded shadow-lg">
+              <img src="/profile_picture.png" alt="Profile Picture" class="img-fluid rounded shadow-lg">
             </div>
           </div>
         </div>
